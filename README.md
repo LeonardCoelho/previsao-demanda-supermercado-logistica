@@ -17,18 +17,20 @@ Este projeto mostra como modelos preditivos ajudam a antecipar a demanda e melho
 
 ## 📁 Estrutura do Projeto
 
-```
 supermarket-sales-forecast/
 ├── data/
-│   └── Dados.csv
+│ └── Dados.csv
 ├── images/
-│   ├── heatmap_correlacao.png
-│   └── total_vendas_produto.png
+│ ├── heatmap_correlacao.png
+│ └── total_vendas_produto.png
 ├── src/
-│   └── vendas_model_rf.ipynb
+│ └── vendas_model_rf.ipynb
 ├── README.md
 └── requirements.txt
-```
+
+yaml
+Copiar
+Editar
 
 ---
 
@@ -87,15 +89,24 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 
 ---
 
-🧠 Nota: Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
-
-## 👨‍💻 Autor
-
-**Leonardo Coelho**  
-Analista de Transportes | Estudante de Ciência de Dados  
-📧 lnrds.coelho@gmail.com  
-🔗 [GitHub](https://github.com/LeonardCoelho) | [LinkedIn](https://linkedin.com/in/leonardcoelho)
+🧠 **Nota:** Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
 
 ---
 
-✅ **Resumo:** Projeto que demonstra domínio prático de Machine Learning com aplicação direta em **previsão de demanda**, essencial para **logística, compras e supply chain**.
+## ▶️ Como usar
+
+1. Clone o repositório  
+2. Instale as dependências com:  
+   ```bash
+   pip install -r requirements.txt
+Abra o notebook:
+
+bash
+Copiar
+Editar
+jupyter notebook src/vendas_model_rf.ipynb
+👨‍💻 Autor
+Leonardo Coelho
+Analista de Transportes | Estudante de Ciência de Dados
+📧 lnrds.coelho@gmail.com
+🔗 GitHub | LinkedIn
