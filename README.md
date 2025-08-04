@@ -87,6 +87,8 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 
 ---
 
+🧠 Nota: Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
+
 ## 👨‍💻 Autor
 
 **Leonardo Coelho**  
