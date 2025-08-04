@@ -13,8 +13,6 @@ Embora os dados venham de vendas no varejo, as técnicas utilizadas podem ser fa
 
 Este projeto mostra como modelos preditivos ajudam a antecipar a demanda e melhorar a performance da cadeia logística.
 
----
-
 ## 📁 Estrutura do Projeto
 
 supermarket-sales-forecast/
@@ -28,17 +26,13 @@ supermarket-sales-forecast/
 ├── README.md
 └── requirements.txt
 
-yaml
+markdown
 Copiar
 Editar
-
----
 
 ## 🔍 Problema
 
 Prever a coluna `Total` de uma venda no supermercado com base em variáveis relacionadas ao produto, cliente, localização, data e hora.
-
----
 
 ## ⚙️ Tecnologias Utilizadas
 
@@ -48,8 +42,6 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 - Seaborn  
 - Matplotlib  
 - Scikit-Learn  
-
----
 
 ## 🚀 Etapas do Projeto
 
@@ -66,8 +58,6 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 7. **Visualização das features mais importantes**
 8. **Geração de gráficos salvos em `/images`**
 
----
-
 ## 📈 Resultados
 
 - **MSE (Erro Quadrático Médio):** 102.3436  
@@ -78,8 +68,6 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 - `Unit Price`
 - `Rating`
 
----
-
 ## 📊 Gráficos Gerados
 
 | Gráfico                        | Descrição                                      |
@@ -87,11 +75,7 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 | `total_vendas_produto.png`    | Total de vendas por linha de produto          |
 | `heatmap_correlacao.png`      | Correlação entre variáveis numéricas          |
 
----
-
 🧠 **Nota:** Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
-
----
 
 ## ▶️ Como usar
 
