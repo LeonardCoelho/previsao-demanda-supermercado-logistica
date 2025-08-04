@@ -1,6 +1,17 @@
 # 🛒 Supermarket Sales Forecast
 
-Este projeto tem como objetivo prever o valor total de vendas em um supermercado com base em variáveis como tipo de produto, horário da compra, gênero do cliente, entre outros. Utilizamos um modelo de Machine Learning com Random Forest para criar uma previsão robusta e precisa.
+Este projeto tem como objetivo prever o **valor total de vendas em um supermercado** com base em variáveis como tipo de produto, horário da compra, gênero do cliente, entre outros. A ideia é simular um cenário real de previsão de demanda que **pode ser aplicado em centros de distribuição, planejamento de estoque e transporte**, elementos-chave da cadeia de suprimentos.
+
+## 🎯 Aplicação na Logística
+
+Embora os dados venham de vendas no varejo, as técnicas utilizadas podem ser facilmente aplicadas para:
+
+- **Prever volumes de pedidos em centros de distribuição**
+- **Apoiar decisões de compras e reposição de estoque**
+- **Melhorar a eficiência logística e alocação de recursos**
+- **Reduzir rupturas ou excesso de estoque**
+
+Este projeto mostra como modelos preditivos ajudam a antecipar a demanda e melhorar a performance da cadeia logística.
 
 ---
 
@@ -30,11 +41,11 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 ## ⚙️ Tecnologias Utilizadas
 
 - Python 3.10+
-- Pandas
-- Numpy
-- Seaborn
-- Matplotlib
-- Scikit-Learn
+- Pandas  
+- Numpy  
+- Seaborn  
+- Matplotlib  
+- Scikit-Learn  
 
 ---
 
@@ -43,34 +54,46 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 1. **Importação e análise dos dados**
 2. **Pré-processamento:**
    - Conversão de datas e extração de hora
-   - Criação de variáveis como `Part_of_Day`, `Is_Weekend`
+   - Criação de variáveis como `Part_of_Day` e `Is_Weekend`
 3. **Feature Engineering:**
    - Ticket médio por linha de produto
    - Label Encoding para variáveis categóricas
 4. **Divisão dos dados em treino e teste**
-5. **Treinamento de um modelo Random Forest Regressor**
+5. **Treinamento do modelo `Random Forest Regressor`**
 6. **Avaliação do modelo com MSE e R²**
 7. **Visualização das features mais importantes**
-8. **Geração de gráficos salvos em `images/`**
+8. **Geração de gráficos salvos em `/images`**
 
 ---
 
 ## 📈 Resultados
 
-- **MSE (Erro Quadrático Médio):** 102.3436
-- **R² (Coeficiente de Determinação):** 0.9984
-- **Features mais importantes:**
-  - Quantity, Unit Price, Rating
+- **MSE (Erro Quadrático Médio):** 102.3436  
+- **R² (Coeficiente de Determinação):** 0.9984  
+
+### 📊 Features mais importantes:
+- `Quantity`
+- `Unit Price`
+- `Rating`
 
 ---
 
 ## 📊 Gráficos Gerados
 
-- `total_vendas_produto.png`: Total de vendas por linha de produto
-- `heatmap_correlacao.png`: Correlação entre variáveis numéricas
+| Gráfico                        | Descrição                                      |
+|-------------------------------|-----------------------------------------------|
+| `total_vendas_produto.png`    | Total de vendas por linha de produto          |
+| `heatmap_correlacao.png`      | Correlação entre variáveis numéricas          |
 
 ---
 
-## 📬 Contato
+## 👨‍💻 Autor
 
-Desenvolvido por [Leonardo Coelho](https://github.com/LeonardCoelho) 🚀
+**Leonardo Coelho**  
+Analista de Transportes | Estudante de Ciência de Dados  
+📧 lnrds.coelho@gmail.com  
+🔗 [GitHub](https://github.com/LeonardCoelho) | [LinkedIn](https://linkedin.com/in/leonardcoelho)
+
+---
+
+✅ **Resumo:** Projeto que demonstra domínio prático de Machine Learning com aplicação direta em **previsão de demanda**, essencial para **logística, compras e supply chain**.
