@@ -15,20 +15,18 @@ Este projeto mostra como modelos preditivos ajudam a antecipar a demanda e melho
 
 ## 📁 Estrutura do Projeto
 
+```
 supermarket-sales-forecast/
 ├── data/
-│ └── Dados.csv
+│   └── Dados.csv
 ├── images/
-│ ├── heatmap_correlacao.png
-│ └── total_vendas_produto.png
+│   ├── heatmap_correlacao.png
+│   └── total_vendas_produto.png
 ├── src/
-│ └── vendas_model_rf.ipynb
+│   └── vendas_model_rf.ipynb
 ├── README.md
 └── requirements.txt
-
-markdown
-Copiar
-Editar
+```
 
 ## 🔍 Problema
 
@@ -83,14 +81,17 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 2. Instale as dependências com:  
    ```bash
    pip install -r requirements.txt
-Abra o notebook:
+   ```
+3. Abra o notebook:  
+   ```bash
+   jupyter notebook src/vendas_model_rf.ipynb
+   ```
 
-bash
-Copiar
-Editar
-jupyter notebook src/vendas_model_rf.ipynb
-👨‍💻 Autor
-Leonardo Coelho
-Analista de Transportes | Estudante de Ciência de Dados
-📧 lnrds.coelho@gmail.com
-🔗 GitHub | LinkedIn
+## 👨‍💻 Autor
+
+**Leonardo Coelho**  
+Analista de Transportes | Estudante de Ciência de Dados  
+📧 lnrds.coelho@gmail.com  
+🔗 [GitHub](https://github.com/LeonardCoelho) | [LinkedIn](https://linkedin.com/in/leonardcoelho)
+
+✅ **Resumo:** Projeto que demonstra domínio prático de Machine Learning com aplicação direta em **previsão de demanda**, essencial para **logística, compras e supply chain**.
