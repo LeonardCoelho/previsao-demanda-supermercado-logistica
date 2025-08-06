@@ -1,4 +1,4 @@
-# 🛒 Supermarket Sales Forecast
+# 🛒 Supermarket Sales Forecast com Machine Learning
 
 Este projeto tem como objetivo prever o **valor total de vendas em um supermercado** com base em variáveis como tipo de produto, horário da compra, gênero do cliente, entre outros. A ideia é simular um cenário real de previsão de demanda que **pode ser aplicado em centros de distribuição, planejamento de estoque e transporte**, elementos-chave da cadeia de suprimentos.
 
@@ -6,24 +6,24 @@ Este projeto tem como objetivo prever o **valor total de vendas em um supermerca
 
 Embora os dados venham de vendas no varejo, as técnicas utilizadas podem ser facilmente aplicadas para:
 
-- **Prever volumes de pedidos em centros de distribuição**
-- **Apoiar decisões de compras e reposição de estoque**
-- **Melhorar a eficiência logística e alocação de recursos**
-- **Reduzir rupturas ou excesso de estoque**
+- 📦 Prever volumes de pedidos em centros de distribuição
+- 🛒 Apoiar decisões de compras e reposição de estoque
+- 🚚 Melhorar a eficiência logística e alocação de recursos
+- 📉 Reduzir rupturas ou excesso de estoque
 
 Este projeto mostra como modelos preditivos ajudam a antecipar a demanda e melhorar a performance da cadeia logística.
 
 ## 📁 Estrutura do Projeto
 
 ```
-supermarket-sales-forecast/
+previsao-demanda-supermercado-logistica/
 ├── data/
 │   └── Dados.csv
 ├── images/
 │   ├── heatmap_correlacao.png
 │   └── total_vendas_produto.png
 ├── src/
-│   └── vendas_model_rf.ipynb
+│   └── supermercado_previsao_vendas_rf.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -32,14 +32,19 @@ supermarket-sales-forecast/
 
 Prever a coluna `Total` de uma venda no supermercado com base em variáveis relacionadas ao produto, cliente, localização, data e hora.
 
+## 📦 Fonte dos Dados
+
+Os dados simulam um cenário de vendas no varejo, com as seguintes colunas principais:
+
+- `Invoice ID`, `Branch`, `City`, `Customer Type`, `Gender`
+- `Product line`, `Unit Price`, `Quantity`, `Tax 5%`, `Total`
+- `Date`, `Time`, `Payment`, `Rating`
+
 ## ⚙️ Tecnologias Utilizadas
 
-- Python 3.10+
-- Pandas  
-- Numpy  
-- Seaborn  
-- Matplotlib  
-- Scikit-Learn  
+- 🐍 Python 3.10+
+- 📊 Pandas, Numpy, Seaborn, Matplotlib
+- 🤖 Scikit-Learn
 
 ## 🚀 Etapas do Projeto
 
@@ -61,19 +66,21 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
 - **MSE (Erro Quadrático Médio):** 102.3436  
 - **R² (Coeficiente de Determinação):** 0.9984  
 
-### 📊 Features mais importantes:
+### 🔍 Features mais importantes:
+
 - `Quantity`
 - `Unit Price`
 - `Rating`
 
 ## 📊 Gráficos Gerados
 
-| Gráfico                        | Descrição                                      |
-|-------------------------------|-----------------------------------------------|
-| `total_vendas_produto.png`    | Total de vendas por linha de produto          |
-| `heatmap_correlacao.png`      | Correlação entre variáveis numéricas          |
+### Total de vendas por linha de produto
+![Total de vendas](images/total_vendas_produto.png)
 
-🧠 **Nota:** Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
+### Correlação entre variáveis numéricas
+![Heatmap de Correlação](images/heatmap_correlacao.png)
+
+> 🧠 **Nota:** Como a variável `Total` é diretamente influenciada por `Quantity` e `Unit Price`, o modelo atinge um R² muito alto. Em cenários reais, o desafio costuma ser prever a `Quantity` futura com base em dados históricos.
 
 ## ▶️ Como usar
 
@@ -84,7 +91,7 @@ Prever a coluna `Total` de uma venda no supermercado com base em variáveis rela
    ```
 3. Abra o notebook:  
    ```bash
-   jupyter notebook src/vendas_model_rf.ipynb
+   jupyter notebook src/supermercado_previsao_vendas_rf.ipynb
    ```
 
 ## 👨‍💻 Autor
@@ -94,4 +101,8 @@ Analista de Transportes | Estudante de Ciência de Dados
 📧 lnrds.coelho@gmail.com  
 🔗 [GitHub](https://github.com/LeonardCoelho) | [LinkedIn](https://linkedin.com/in/leonardcoelho)
 
-✅ **Resumo:** Projeto que demonstra domínio prático de Machine Learning com aplicação direta em **previsão de demanda**, essencial para **logística, compras e supply chain**.
+---
+
+## ✅ Conclusão
+
+Projeto que demonstra domínio prático de Machine Learning com aplicação direta em **previsão de demanda**, essencial para **logística, compras e supply chain**.
